@@ -1,0 +1,20 @@
+body
+{
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.solidbackgrounds.com/images/1920x1080/1920x1080-green-web-color-solid-color-background.jpg');
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 150px;
+}
+   
+h1{
+    color: goldenrod;
+   
+}
+
+
+#message-el{
+    color: rgb(205, 21, 171);
+    font-size: 20px;
+    font-weight: bold;
+}

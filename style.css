@@ -14,7 +14,12 @@ h1{
 
 
 #message-el{
-    color: rgb(205, 21, 171);
+    color: rgba(46, 11, 242, 0.966);
     font-size: 20px;
     font-weight: bold;
+}
+
+
+#footer{
+    color: rgb(0, 255, 255);
 }

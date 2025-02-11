@@ -27,6 +27,7 @@ function renderGame()
     else if(sum === 21)
     {
         message="Wohoo! You've got Blackjack! 🥳"
+        reset();
     }
     else
     {

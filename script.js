@@ -1,23 +1,41 @@
-let firstCard = 10
-let secondCard = 7
-let sum = firstCard + secondCard
+let firstCard = Math.floor(Math.random() * 10) + 2;
+let secondCard = Math.floor(Math.random() * 10) + 2;
+let sum = firstCard + secondCard;
 
-// Write the conditional according to these rules:
+let messageEl = document.getElementById("message-el")
+// let sumEl = document.getElementById("sum-el")
+let sumEl = document.querySelector("#sum-el")
+let cardEl = document.getElementById("card-el")
 
-// if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
-// else if exactly 21 -> "Wohoo! You've got Blackjack! 🥳"
-// else -> "You're out of the game! 😭"
+let message="";
 
-
-if(sum <= 20)
+function startGame()
 {
-    console.log("Do you want to draw a new card? 🙂")
+    sumEl.textContent="Sum: "+sum
+    cardEl.textContent=`Cards: ${firstCard} & ${secondCard}`
+    if(sum <= 20)
+    {
+        message="Do you want to draw a new card? 🙂"
+       
+    }
+    else if(sum === 21)
+    {
+        message="Wohoo! You've got Blackjack! 🥳"
+    }
+    else
+    {
+        message="You're out of the game! 😭"
+    }
+    messageEl.textContent=message
 }
-else if(sum === 21)
+
+
+function newCard()
 {
-    console.log("Wohoo! You've got Blackjack! 🥳")
-}
-else
-{
-    console.log("You're out of the game! 😭")
+    // 1. Create a card variable, and hard code its value to a number (2-11)
+    let newCard = 7;
+    // 2. Add the new card to the sum variable
+    sum += newCard;
+    // 3. Call startGame()
+    startGame();
 }

@@ -14,12 +14,32 @@ h1{
 
 
 #message-el{
-    color: rgba(46, 11, 242, 0.966);
-    font-size: 20px;
+    color: whitesmoke;
+    font-size:larger;
     font-weight: bold;
+    
 }
 
 
 #footer{
     color: rgb(0, 255, 255);
+}
+
+
+p{
+    font-size: medium;
+    font: 1em sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+button{
+    background-color: goldenrod;
+    color: #016f32;
+    width: 150px;
+    font-weight: bold;
+    border: none;
+    border-radius: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
